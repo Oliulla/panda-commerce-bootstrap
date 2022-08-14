@@ -152,7 +152,7 @@
                     </div>
                     <div class="m-3">
                         <h5>$120</h5>
-                      <div class="btn btn-warning text-white">Buy Now <i class="fa-solid fa-arrow-right ps-3"></i></div>
+                      <div class="btn btn-warning text-white" onclick="buyNow()">Buy Now <i class="fa-solid fa-arrow-right ps-3"></i></div>
                     </div>
                   </div>
                 </div>
@@ -203,9 +203,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div id="change-img" class="col">
                   <div class="card border border-0 shadow-lg h-100">
-                    <img src="images/bags/bag-2.png" class="card-img-top">
+                    <img id="img1" src="images/bags/bag-2.png" class="card-img-top">
+                    <img id="img2" src="js/images.jpg" class="card-img-top" style="display: none;">
                     <div class="card-body">
                       <h5 class="card-title">Blue Niltu Bag</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -243,18 +244,21 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
-                        <button type="submit" class="btn btn-warning">Submit <i class="fa-solid fa-arrow-right ps-3"></i></button>
+                        <button id="submit-button" type="submit" class="btn btn-warning" disabled>Submit <i class="fa-solid fa-arrow-right ps-3"></i></button>
                     </div>
                 </form>
             </div>
         </section>
         <!-- Subscribe ends -->
     </main>
-   <footer class="text-center mt-5 mb-5">
-      <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+   <footer class="text-center mt-5 p-5 w-100 bg-black text-white">
+      <p class="p-5"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
    </footer>
 
     <!-- bootstrap script link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!-- My script link -->
+    <script src="js/panda.js"></script>
 </body>
 </html>
